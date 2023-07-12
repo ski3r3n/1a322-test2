@@ -1,249 +1,250 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
+def on_button_pressed_a():
+    basic.show_leds("""
         # . . . #
         . # . # .
         . . # . .
         # # . # #
         # # . # #
-        `)
-    basic.clearScreen()
-    basic.showLeds(`
+        """)
+    basic.clear_screen()
+    basic.show_leds("""
         # . # . .
         # . # . #
         . # . # .
         . . . . #
         . . . # .
-        `)
-    basic.clearScreen()
-    if (randint(0, 2) == 0) {
-        basic.showLeds(`
+        """)
+    basic.clear_screen()
+    if randint(0, 2) == 0:
+        basic.show_leds("""
             # . . . #
             . # . # .
             . . # . .
             # # . # #
             # # . # #
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # # # # #
             . . . . .
-            `)
-    } else if (randint(0, 1) == 0) {
-        basic.showLeds(`
+            """)
+    elif randint(0, 1) == 0:
+        basic.show_leds("""
             . # # # .
             # # # # #
             # # # # #
             # # # # #
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             . # # # .
             # . . . #
-            `)
-    } else {
-        basic.showLeds(`
+            """)
+    else:
+        basic.show_leds("""
             . # # # .
             . # # # .
             . # # # .
             . # # # .
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # . . . #
             . # # # .
-            `)
-    }
-})
-input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
+            """)
+input.on_button_pressed(Button.A, on_button_pressed_a)
+
+def on_button_pressed_ab():
+    basic.show_leds("""
         . # # # .
         . # # # .
         . # # # .
         . # # # .
         . # # # .
-        `)
-    basic.clearScreen()
-    basic.showLeds(`
+        """)
+    basic.clear_screen()
+    basic.show_leds("""
         # . # . .
         # . # . #
         . # . # .
         . . . . #
         . . . # .
-        `)
-    basic.clearScreen()
-    if (randint(0, 2) == 0) {
-        basic.showLeds(`
+        """)
+    basic.clear_screen()
+    if randint(0, 2) == 0:
+        basic.show_leds("""
             . # # # .
             . # # # .
             . # # # .
             . # # # .
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # # # # #
             . . . . .
-            `)
-    } else if (randint(0, 1) == 0) {
-        basic.showLeds(`
+            """)
+    elif randint(0, 1) == 0:
+        basic.show_leds("""
             # . . . #
             . # . # .
             . . # . .
             # # . # #
             # # . # #
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             . # # # .
             # . . . #
-            `)
-    } else {
-        basic.showLeds(`
+            """)
+    else:
+        basic.show_leds("""
             . # # # .
             # # # # #
             # # # # #
             # # # # #
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # . . . #
             . # # # .
-            `)
-    }
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
+            """)
+input.on_button_pressed(Button.AB, on_button_pressed_ab)
+
+def on_button_pressed_b():
+    basic.show_leds("""
         . # # # .
         # # # # #
         # # # # #
         # # # # #
         . # # # .
-        `)
-    basic.clearScreen()
-    basic.showLeds(`
+        """)
+    basic.clear_screen()
+    basic.show_leds("""
         # . # . .
         # . # . #
         . # . # .
         . . . . #
         . . . # .
-        `)
-    basic.clearScreen()
-    if (randint(0, 2) == 0) {
-        basic.showLeds(`
+        """)
+    basic.clear_screen()
+    if randint(0, 2) == 0:
+        basic.show_leds("""
             . # # # .
             # # # # #
             # # # # #
             # # # # #
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # # # # #
             . . . . .
-            `)
-    } else if (randint(0, 1) == 0) {
-        basic.showLeds(`
+            """)
+    elif randint(0, 1) == 0:
+        basic.show_leds("""
             . # # # .
             . # # # .
             . # # # .
             . # # # .
             . # # # .
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             . # # # .
             # . . . #
-            `)
-    } else {
-        basic.showLeds(`
+            """)
+    else:
+        basic.show_leds("""
             # . . . #
             . # . # .
             . . # . .
             # # . # #
             # # . # #
-            `)
-        basic.clearScreen()
-        basic.showLeds(`
+            """)
+        basic.clear_screen()
+        basic.show_leds("""
             . # . # .
             . # . # .
             . . . . .
             # . . . #
             . # # # .
-            `)
-    }
-})
-input.onGesture(Gesture.Shake, function () {
-    basic.showLeds(`
+            """)
+input.on_button_pressed(Button.B, on_button_pressed_b)
+
+def on_gesture_shake():
+    basic.show_leds("""
         . # # # .
         # # # # #
         # # # # #
         # # # # #
         . # # # .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . # . .
-        . . . # .
+        . # . . .
         # # # # #
-        . . . # .
+        . # . . .
         . . # . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         # . . . #
         . # . # .
         . . # . .
         # # . # #
         # # . # #
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . . # . .
-        . # . . .
+        . . . # .
         # # # # #
-        . # . . .
+        . . . # .
         . . # . .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . # # # .
         . # # # .
         . # # # .
         . # # # .
         . # # # .
-        `)
-    basic.showLeds(`
+        """)
+    basic.show_leds("""
         . # # # .
         . . . . #
         # . . # .
         . . # . .
         . # # # #
-        `)
-    basic.clearScreen()
-})
-basic.forever(function () {
-	
-})
+        """)
+    basic.clear_screen()
+input.on_gesture(Gesture.SHAKE, on_gesture_shake)
+
+def on_forever():
+    pass
+basic.forever(on_forever)
